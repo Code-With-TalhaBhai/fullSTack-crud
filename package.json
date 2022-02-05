@@ -1,0 +1,21 @@
+{
+  "name": "crud-backened",
+  "version": "1.0.0",
+  "description": "This is CRUD APP backened with mern stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontened && npm run build --prefix frontened",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.15"
+  }
+}

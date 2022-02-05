@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "name": "Muhammad Usman",
+      "passion": "Earning",
+      "profession": "SE",
+      "email": "usman@usman.com",
+      "number": "543253452",
+      "id": 1
+    },
+    {
+      "name": "Muhammad Bilal",
+      "passion": "Spare",
+      "profession": "None",
+      "email": "bilal@bilalgmail.com",
+      "number": "5425432532",
+      "id": 3
+    }
+  ]
+}
