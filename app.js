@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 // import route from './routes/route';
 const route = require('./routes/route');
 const cors = require('cors');
+// const res = require('express/lib/response');
 // const bodyParser = require('body-Parser');
 
 // const corsOptions ={
@@ -31,10 +32,14 @@ const PORT = process.env.PORT || 8008;
 
 if (process.env.NODE_ENV === "production"){
     app.use(express.static("frontened/build"))
+    const path = require('path')
+    app.get("*",(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'frontened','build','index.html'));
+})
 }
 
 
-const URI = 'mongodb://localhost:27017/crud-op';
+const URI = env.URI;
 // const URI = 'mongodb://localhost:27015/crud-op?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false';
 
 // const db = mongoose.connection
