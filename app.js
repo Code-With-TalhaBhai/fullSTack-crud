@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === "production"){
 }
 
 
-const URI = env.URI;
+const URI = process.env.MONGO_URI;
 // const URI = 'mongodb://localhost:27015/crud-op?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false';
 
 // const db = mongoose.connection
