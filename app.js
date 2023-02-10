@@ -37,6 +37,7 @@ if (process.env.NODE_ENV === "production"){
     res.sendFile(path.resolve(__dirname,'frontened','build','index.html'));
 })
 }
+console.log('working')
 
 
 const URI = process.env.MONGO_URI;
